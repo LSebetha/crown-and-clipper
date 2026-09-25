@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Crown & Clipper</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+
+        <a href="/" class="brand">
+            <img
+                src="{{ url_for('static', filename='images/logo.png') }}"
+                alt="Crown & Clipper Barbershop"
+                class="brand-logo"
+            >
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+        >
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="/">Home</a>
+            <a href="/services">Services</a>
+            <a href="/about">About</a>
+            <a href="/contact" class="active">Contact</a>
+            <a href="/booking" class="book-nav">Book Now</a>
+        </div>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <p class="section-label">GET IN TOUCH</p>
+
+        <h1>Come Take Your Seat.</h1>
+
+        <p>
+            Questions, appointments or just looking for your next
+            fresh cut? Crown & Clipper is ready to welcome you.
+        </p>
+
+    </section>
+
+
+    <section class="contact-section">
+
+        <div class="contact-intro">
+
+            <p class="section-label">VISIT THE SHOP</p>
+
+            <h2>We're Ready When You Are.</h2>
+
+            <p>
+                Visit Crown & Clipper in Midrand, Gauteng
+                or book your appointment online before you arrive.
+            </p>
+
+            <a href="/booking" class="btn btn-primary">
+                Book Appointment
+            </a>
+
+        </div>
+
+
+        <div class="contact-details">
+
+            <article class="contact-card">
+                <span>01</span>
+                <h3>Location</h3>
+
+                <p>
+                    24 Crown Street<br>
+                    Halfway Gardens, Midrand<br>
+                    Gauteng, 1686
+                </p>
+            </article>
+
+
+            <article class="contact-card">
+                <span>02</span>
+                <h3>Contact</h3>
+
+                <p>
+                    <a href="tel:+27125550147">
+                        012 555 0147
+                    </a>
+
+                    <br>
+
+                    <a href="mailto:bookings@crownandclipper.co.za">
+                        bookings@crownandclipper.co.za
+                    </a>
+                </p>
+            </article>
+
+
+            <article class="contact-card">
+                <span>03</span>
+                <h3>Opening Hours</h3>
+
+                <div class="hours-row">
+                    <span>Mon – Fri</span>
+                    <strong>09:00 – 18:00</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Saturday</span>
+                    <strong>08:00 – 17:00</strong>
+                </div>
+
+                <div class="hours-row">
+                    <span>Sunday</span>
+                    <strong>Closed</strong>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact-banner">
+
+        <p class="section-label">CROWN & CLIPPER</p>
+
+        <h2>Your Crown. Our Craft.</h2>
+
+        <p>
+            Precision cuts. Professional grooming.
+            A chair waiting for you.
+        </p>
+
+        <a href="/booking" class="btn btn-primary">
+            Reserve Your Chair
+        </a>
+
+    </section>
+
+</main>
+
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

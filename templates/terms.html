@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terms & Conditions | Crown & Clipper</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+
+        <a href="/" class="brand">
+            <img
+                src="{{ url_for('static', filename='images/logo.png') }}"
+                alt="Crown & Clipper Barbershop"
+                class="brand-logo"
+            >
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+        >
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="/">Home</a>
+            <a href="/services">Services</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/booking" class="book-nav">Book Now</a>
+        </div>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <p class="section-label">CROWN & CLIPPER</p>
+
+        <h1>Terms & Conditions</h1>
+
+        <p>
+            Please review our appointment and service terms
+            before visiting Crown & Clipper.
+        </p>
+
+    </section>
+
+
+    <section class="terms-section">
+
+        <div class="terms-intro">
+
+            <p class="section-label">CUSTOMER INFORMATION</p>
+
+            <h2>Our Service Terms</h2>
+
+            <p>
+                These terms apply to appointments and services
+                booked with Crown & Clipper Barbershop.
+            </p>
+
+        </div>
+
+
+        <div class="terms-content">
+
+            <article class="term-item">
+                <span>01</span>
+
+                <div>
+                    <h3>Appointments</h3>
+
+                    <p>
+                        Customers are responsible for providing accurate
+                        contact and appointment information when making
+                        an online booking. A booking is considered confirmed
+                        once the website displays a successful booking
+                        confirmation.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="term-item">
+                <span>02</span>
+
+                <div>
+                    <h3>Arrival & Late Appointments</h3>
+
+                    <p>
+                        Customers are encouraged to arrive 5–10 minutes
+                        before their scheduled appointment. Late arrival
+                        may reduce the available service time or require
+                        the appointment to be rescheduled.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="term-item">
+                <span>03</span>
+
+                <div>
+                    <h3>Cancellations</h3>
+
+                    <p>
+                        If you are unable to attend your appointment,
+                        please contact Crown & Clipper as early as
+                        possible so the appointment time can be made
+                        available to another customer.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="term-item">
+                <span>04</span>
+
+                <div>
+                    <h3>Prices & Services</h3>
+
+                    <p>
+                        Prices displayed on the website apply to the
+                        listed services. Crown & Clipper may update
+                        services, durations and prices when necessary.
+                        Any applicable price will be shown before the
+                        customer confirms a booking.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="term-item">
+                <span>05</span>
+
+                <div>
+                    <h3>Customer Information</h3>
+
+                    <p>
+                        Information submitted during booking is used
+                        for appointment administration and customer
+                        communication. Customers should ensure that
+                        their name, email address and telephone number
+                        are entered correctly.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="term-item">
+                <span>06</span>
+
+                <div>
+                    <h3>Calendar Events</h3>
+
+                    <p>
+                        Calendar options are provided for convenience.
+                        Customers remain responsible for attending their
+                        appointment at the date and time confirmed during
+                        the booking process.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="term-item">
+                <span>07</span>
+
+                <div>
+                    <h3>Service Expectations</h3>
+
+                    <p>
+                        Customers should communicate their preferred
+                        hairstyle or grooming requirements to their barber
+                        before the service begins. Results may vary
+                        depending on hair type, condition and requested
+                        style.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="term-item">
+                <span>08</span>
+
+                <div>
+                    <h3>Contact</h3>
+
+                    <p>
+                        Questions regarding appointments or these terms
+                        can be directed to Crown & Clipper at
+                        bookings@crownandclipper.co.za or
+                        012 555 0147.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

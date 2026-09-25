@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | Crown & Clipper</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="/" class="brand">
+                <img
+                    src="{{ url_for('static', filename='images/logo.png') }}"
+                    alt="Crown & Clipper Barbershop"
+                    class="brand-logo"
+                >
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+            >
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/">Home</a>
+                <a href="/services" class="active">Services</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/booking" class="book-nav">Book Now</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- PAGE HEADER -->
+        <section class="page-hero">
+
+            <p class="section-label">OUR SERVICES</p>
+
+            <h1>Grooming With Purpose.</h1>
+
+            <p>
+                From timeless cuts to sharp modern fades, every service
+                is delivered with precision and attention to detail.
+            </p>
+
+        </section>
+
+
+        <!-- SERVICES -->
+        <section class="services-section">
+
+            <div class="section-heading">
+                <p class="section-label">CHOOSE YOUR SERVICE</p>
+                <h2>Crafted For Your Style</h2>
+            </div>
+
+
+            <div class="services-grid">
+
+                <!-- SERVICE 1 -->
+<article class="service-card">
+
+    <div class="service-number">01</div>
+
+    <h3>Chiskop</h3>
+
+    <p>
+        A clean, close-cut finish for a sharp and simple look,
+        completed with precise edging around the hairline.
+    </p>
+
+    <div class="service-info">
+        <span>20 min</span>
+        <strong>R40</strong>
+    </div>
+
+    <a href="/booking" class="service-link">
+        Book Service →
+    </a>
+
+</article>
+
+                <!-- SERVICE 2 -->
+                <article class="service-card">
+
+                    <div class="service-number">02</div>
+
+                    <h3>Classic Haircut</h3>
+
+                    <p>
+                        A clean, professionally finished haircut tailored
+                        to your preferred style.
+                    </p>
+
+                    <div class="service-info">
+                        <span>30 min</span>
+                        <strong>R150</strong>
+                    </div>
+
+                    <a href="/booking" class="service-link">
+                        Book Service →
+                    </a>
+
+                </article>
+
+
+                <!-- SERVICE 3 -->
+                <article class="service-card featured-service">
+
+                    <div class="service-badge">POPULAR</div>
+
+                    <div class="service-number">03</div>
+
+                    <h3>Skin Fade</h3>
+
+                    <p>
+                        A precise fade blended seamlessly from skin to
+                        your preferred length and finish.
+                    </p>
+
+                    <div class="service-info">
+                        <span>45 min</span>
+                        <strong>R180</strong>
+                    </div>
+
+                    <a href="/booking" class="service-link">
+                        Book Service →
+                    </a>
+
+                </article>
+
+
+                <!-- SERVICE 4 -->
+                <article class="service-card featured-service">
+
+                    <div class="service-badge">POPULAR</div>
+
+                    <div class="service-number">04</div>
+
+                    <h3>Haircut + Beard</h3>
+
+                    <p>
+                        Complete grooming with a tailored haircut,
+                        beard shaping and clean finishing.
+                    </p>
+
+                    <div class="service-info">
+                        <span>60 min</span>
+                        <strong>R230</strong>
+                    </div>
+
+                    <a href="/booking" class="service-link">
+                        Book Service →
+                    </a>
+
+                </article>
+
+
+                <!-- SERVICE 5 -->
+                <article class="service-card">
+
+                    <div class="service-number">05</div>
+
+                    <h3>Beard Trim</h3>
+
+                    <p>
+                        Beard shaping, trimming and detailing for a
+                        clean and well-groomed finish.
+                    </p>
+
+                    <div class="service-info">
+                        <span>20 min</span>
+                        <strong>R100</strong>
+                    </div>
+
+                    <a href="/booking" class="service-link">
+                        Book Service →
+                    </a>
+
+                </article>
+
+
+                <!-- SERVICE 6 -->
+                <article class="service-card">
+
+                    <div class="service-number">06</div>
+
+                    <h3>Kids Cut</h3>
+
+                    <p>
+                        A comfortable and professional haircut service
+                        for younger clients.
+                    </p>
+
+                    <div class="service-info">
+                        <span>30 min</span>
+                        <strong>R120</strong>
+                    </div>
+
+                    <a href="/booking" class="service-link">
+                        Book Service →
+                    </a>
+
+                </article>
+
+
+                <!-- SERVICE 7 -->
+                <article class="service-card">
+
+                    <div class="service-number">07</div>
+
+                    <h3>Line-Up & Finish</h3>
+
+                    <p>
+                        Precision edging and detailing around the
+                        hairline for a fresh, sharp finish.
+                    </p>
+
+                    <div class="service-info">
+                        <span>15 min</span>
+                        <strong>R80</strong>
+                    </div>
+
+                    <a href="/booking" class="service-link">
+                        Book Service →
+                    </a>
+
+                </article>
+
+                <!-- SERVICE 8 -->
+<article class="service-card">
+
+    <div class="service-number">08</div>
+
+    <h3>Hair Dye</h3>
+
+    <p>
+        Professional hair colour application for clients looking
+        to refresh or change their look.
+    </p>
+
+    <div class="service-info">
+        <span>45 min</span>
+        <strong>R80</strong>
+    </div>
+
+    <a href="/booking" class="service-link">
+        Book Service →
+    </a>
+
+</article>
+
+            </div>
+
+        </section>
+
+        <!-- SHOP GALLERY -->
+<section class="shop-gallery">
+
+    <div class="gallery-heading">
+        <p class="section-label">THE CROWN & CLIPPER EXPERIENCE</p>
+        <h2>Inside The Craft.</h2>
+        <p>
+            Precision, detail and professional grooming in every visit.
+        </p>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-image gallery-image-large">
+            <img
+                src="{{ url_for('static', filename='images/1.jpg') }}"
+                alt="Professional barbering at Crown & Clipper"
+                class="gallery-clickable"
+            >
+        </div>
+
+        <div class="gallery-image">
+            <img
+                src="{{ url_for('static', filename='images/2.jpg') }}"
+                alt="Precision haircut and grooming"
+                class="gallery-clickable"
+            >
+        </div>
+
+        <div class="gallery-image">
+            <img
+                src="{{ url_for('static', filename='images/3.jpg') }}"
+                alt="Barbershop grooming experience"
+                class="gallery-clickable"
+            >
+        </div>
+
+        <div class="gallery-image gallery-image-wide">
+            <img
+                src="{{ url_for('static', filename='images/4.jpg') }}"
+                alt="Crown & Clipper barber service"
+                class="gallery-clickable"
+            >
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- IMAGE LIGHTBOX -->
+<div class="image-lightbox" id="imageLightbox">
+
+    <button
+        type="button"
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Close image"
+    >
+        ×
+    </button>
+
+    <img
+        src=""
+        alt=""
+        id="lightboxImage"
+    >
+
+</div>
+
+        <!-- CTA -->
+        <section class="services-cta">
+
+            <p class="section-label">READY FOR A FRESH LOOK?</p>
+
+            <h2>Your Chair Is Waiting.</h2>
+
+            <p>
+                Choose your service, barber and preferred appointment time.
+            </p>
+
+            <a href="/booking" class="btn btn-primary">
+                Book Appointment
+            </a>
+
+        </section>
+
+    </main>
+
+    
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <img
+                    src="{{ url_for('static', filename='images/logo.png') }}"
+                    alt="Crown & Clipper Barbershop"
+                    class="footer-logo"
+                >
+
+                <p>
+                    Precision cuts, modern grooming and confident
+                    style in the heart of Midrand.
+                </p>
+
+                <a href="/booking" class="footer-book">
+                    Book Your Appointment →
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="/">Home</a>
+                <a href="/services">Services</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/booking">Book Now</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Visit Us</h3>
+
+                <p>
+                    24 Crown Street<br>
+                    Halfway Gardens<br>
+                    Midrand, Gauteng, 1686
+                </p>
+
+                <a href="tel:+27125550147">
+                    012 555 0147
+                </a>
+
+                <a href="mailto:bookings@crownandclipper.co.za">
+                    bookings@crownandclipper.co.za
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Opening Hours</h3>
+
+                <div class="footer-hours">
+                    <span>Mon – Fri</span>
+                    <strong>09:00 – 18:00</strong>
+                </div>
+
+                <div class="footer-hours">
+                    <span>Saturday</span>
+                    <strong>08:00 – 17:00</strong>
+                </div>
+
+                <div class="footer-hours">
+                    <span>Sunday</span>
+                    <strong>Closed</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Crown & Clipper Barbershop.
+                All rights reserved.
+            </p>
+
+            <a href="/terms">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

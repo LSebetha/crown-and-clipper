@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Crown & Clipper</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="/" class="brand">
+                <img
+                    src="{{ url_for('static', filename='images/logo.png') }}"
+                    alt="Crown & Clipper Barbershop"
+                    class="brand-logo"
+                >
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+            >
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/">Home</a>
+                <a href="/services">Services</a>
+                <a href="/about" class="active">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/booking" class="book-nav">Book Now</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ABOUT HERO -->
+        <section class="page-hero">
+
+            <p class="section-label">OUR STORY</p>
+
+            <h1>More Than A Haircut.</h1>
+
+            <p>
+                Crown & Clipper is built around precision, confidence
+                and the belief that great grooming should feel as good
+                as it looks.
+            </p>
+
+        </section>
+
+
+        <!-- STORY -->
+        <section class="about-story">
+
+            <div class="about-story-content">
+
+                <p class="section-label">CROWN & CLIPPER</p>
+
+                <h2>Your Crown Deserves Craft.</h2>
+
+                <p>
+                    Crown & Clipper was created to bring together
+                    traditional barbering craftsmanship and modern style.
+                    Our barbershop is a space where every client can relax,
+                    feel welcome and leave with a look that reflects their
+                    personality.
+                </p>
+
+                <p>
+                    Whether you are coming in for a classic haircut,
+                    a sharp skin fade or complete beard grooming, our
+                    focus remains the same: precision, attention to detail
+                    and professional service.
+                </p>
+
+                <a href="/services" class="btn about-button">
+                    Explore Services
+                </a>
+
+            </div>
+
+
+            <div class="about-values">
+
+                <div class="value-card">
+                    <span>01</span>
+                    <h3>Precision</h3>
+                    <p>
+                        Every cut is approached with care and attention
+                        to the smallest details.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <span>02</span>
+                    <h3>Style</h3>
+                    <p>
+                        We combine timeless barbering with modern
+                        techniques and current styles.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <span>03</span>
+                    <h3>Confidence</h3>
+                    <p>
+                        Our goal is simple: you should leave the chair
+                        feeling sharper than when you arrived.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BARBERS -->
+        <section class="barbers-section">
+
+            <div class="section-heading barber-heading">
+
+                <div>
+                    <p class="section-label">MEET THE TEAM</p>
+                    <h2>The Hands Behind The Craft</h2>
+                </div>
+
+                <p class="barber-intro">
+                    Skilled professionals committed to delivering
+                    exceptional grooming and personal service.
+                </p>
+
+            </div>
+
+
+            <div class="barbers-grid">
+
+                <!-- BARBER 1 -->
+                <article class="barber-card">
+
+                    <div class="barber-photo">
+                        <span>TS</span>
+                    </div>
+
+                    <div class="barber-details">
+                        <h3>Thabo Mokoena</h3>
+                        <p class="barber-role">Senior Barber</p>
+
+                        <p>
+                            Specialising in classic cuts, precision
+                            grooming and clean professional finishes.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <!-- BARBER 2 -->
+                <article class="barber-card">
+
+                    <div class="barber-photo">
+                        <span>KM</span>
+                    </div>
+
+                    <div class="barber-details">
+                        <h3>Kabelo Molefe</h3>
+                        <p class="barber-role">Fade Specialist</p>
+
+                        <p>
+                            Focused on sharp fades, modern styles
+                            and detailed line work.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <!-- BARBER 3 -->
+                <article class="barber-card">
+
+                    <div class="barber-photo">
+                        <span>SN</span>
+                    </div>
+
+                    <div class="barber-details">
+                        <h3>Sipho Nkosi</h3>
+                        <p class="barber-role">Barber & Beard Specialist</p>
+
+                        <p>
+                            Combining precision haircuts with expert
+                            beard shaping and grooming.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT CTA -->
+        <section class="services-cta">
+
+            <p class="section-label">YOUR NEXT CUT</p>
+
+            <h2>Meet Us In The Chair.</h2>
+
+            <p>
+                Choose your service and preferred barber when booking.
+            </p>
+
+            <a href="/booking" class="btn btn-primary">
+                Book Appointment
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

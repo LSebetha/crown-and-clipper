@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crown & Clipper | Barbershop</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="/" class="brand">
+    <img
+        src="{{ url_for('static', filename='images/logo.png') }}"
+        alt="Crown & Clipper Barbershop"
+        class="brand-logo"
+    >
+</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="active">Home</a>
+                <a href="/services">Services</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/booking" class="book-nav">Book Now</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-label">
+                    PRECISION • STYLE • CONFIDENCE
+                </p>
+
+                <h1>
+                    YOUR CROWN.<br>
+                    <span>OUR CRAFT.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Precision cuts, modern grooming, and confident style.
+                    Step into Crown & Clipper and leave looking your best.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="/booking" class="btn btn-primary">
+                        Book Now
+                    </a>
+
+                    <a href="/services" class="btn btn-secondary">
+                        View Services
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features">
+
+            <div class="feature">
+                <div class="feature-icon">✂</div>
+
+                <div>
+                    <h3>Expert Barbers</h3>
+                    <p>Skilled hands. Precise results.</p>
+                </div>
+            </div>
+
+
+            <div class="feature">
+                <div class="feature-icon">◆</div>
+
+                <div>
+                    <h3>Modern Styles</h3>
+                    <p>Classic cuts with a modern edge.</p>
+                </div>
+            </div>
+
+
+            <div class="feature">
+                <div class="feature-icon">♛</div>
+
+                <div>
+                    <h3>Premium Experience</h3>
+                    <p>Professional grooming in comfort.</p>
+                </div>
+            </div>
+
+
+            <div class="feature">
+                <div class="feature-icon">★</div>
+
+                <div>
+                    <h3>Quality Service</h3>
+                    <p>Attention to every detail.</p>
+                </div>
+            </div>
+
+        </section>
+
+        </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <img
+                    src="{{ url_for('static', filename='images/logo.png') }}"
+                    alt="Crown & Clipper Barbershop"
+                    class="footer-logo"
+                >
+
+                <p>
+                    Precision cuts, modern grooming and confident
+                    style in the heart of Midrand.
+                </p>
+
+                <a href="/booking" class="footer-book">
+                    Book Your Appointment →
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="/">Home</a>
+                <a href="/services">Services</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/booking">Book Now</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Visit Us</h3>
+
+                <p>
+                    24 Crown Street<br>
+                    Halfway Gardens<br>
+                    Midrand, Gauteng, 1686
+                </p>
+
+                <a href="tel:+27125550147">
+                    012 555 0147
+                </a>
+
+                <a href="mailto:bookings@crownandclipper.co.za">
+                    bookings@crownandclipper.co.za
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Opening Hours</h3>
+
+                <div class="footer-hours">
+                    <span>Mon – Fri</span>
+                    <strong>09:00 – 18:00</strong>
+                </div>
+
+                <div class="footer-hours">
+                    <span>Saturday</span>
+                    <strong>08:00 – 17:00</strong>
+                </div>
+
+                <div class="footer-hours">
+                    <span>Sunday</span>
+                    <strong>Closed</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Crown & Clipper Barbershop.
+                All rights reserved.
+            </p>
+
+            <a href="/terms">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FIRST VISIT OFFER ================= -->
+
+<div class="promo-overlay" id="promoModal">
+
+    <div class="promo-content">
+
+        <button
+            type="button"
+            class="promo-close"
+            id="closePromo"
+            aria-label="Close promotion"
+            >
+            ×
+        </button>
+
+        <p class="section-label">
+            MONTH-END SPECIAL
+        </p>
+
+        <h2>
+            25% Off Your Fresh Cut.
+        </h2>
+
+        <p class="promo-text">
+            Book your appointment for
+            <strong>29 or 30 September</strong>
+            and enjoy 25% off your grooming service
+            when you visit Crown & Clipper.
+        </p>
+
+        <p class="promo-note">
+            No promo code needed. The special will be
+            honoured at your appointment.
+        </p>
+
+        <a href="/booking" class="btn-primary">
+            Book The Special
+        </a>
+
+        <button
+            type="button"
+            class="promo-decline"
+            id="declinePromo"
+            >
+            Maybe next time
+        </button>
+
+    </div>
+
+</div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
