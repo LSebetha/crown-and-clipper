@@ -160,7 +160,7 @@ if (bookingForm) {
         if (selectedDate.getDay() === 0) {
 
             alert(
-                "Crown & Clipper is closed on Sundays. Please choose another date."
+                "Clip Your Crown is closed on Sundays. Please choose another date."
             );
 
             bookingDate.value = "";
@@ -308,7 +308,7 @@ if (bookingForm) {
                 // "That barber is already booked..."
                 //
                 // Sunday:
-                // "Crown & Clipper is closed..."
+                // "Clip Your Crown is closed..."
                 //
                 // Other server error:
                 // appropriate backend message
@@ -473,15 +473,15 @@ if (bookingForm) {
 
 
         const title =
-            `${booking.service} - Crown & Clipper`;
+            `${booking.service} - Clip Your Crown`;
 
 
         const details =
-            `Appointment with ${booking.barber} at Crown & Clipper Barbershop.`;
+            `Appointment with ${booking.barber} at Clip Your Crown Barbershop.`;
 
 
         const location =
-            "Crown & Clipper Barbershop, 24 Crown Street, Halfway Gardens, Midrand, Gauteng, 1686";
+            "Clip Your Crown Barbershop, 24 Crown Street, Halfway Gardens, Midrand, Gauteng, 1686";
 
 
         const url =
@@ -546,15 +546,15 @@ if (bookingForm) {
         const icsContent =
 `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Crown & Clipper//Booking//EN
+PRODID:-//Clip Your Crown//Booking//EN
 BEGIN:VEVENT
 UID:${Date.now()}@crownandclipper
 DTSTAMP:${formatICSDate(new Date())}
 DTSTART:${formatICSDate(start)}
 DTEND:${formatICSDate(end)}
-SUMMARY:${booking.service} - Crown & Clipper
-DESCRIPTION:Appointment with ${booking.barber} at Crown & Clipper Barbershop.
-LOCATION:Crown & Clipper Barbershop, 24 Crown Street, Halfway Gardens, Midrand, Gauteng, 1686
+SUMMARY:${booking.service} - Clip Your Crown
+DESCRIPTION:Appointment with ${booking.barber} at Clip Your Crown Barbershop.
+LOCATION:Clip Your Crown Barbershop, 24 Crown Street, Halfway Gardens, Midrand, Gauteng, 1686
 END:VEVENT
 END:VCALENDAR`;
 

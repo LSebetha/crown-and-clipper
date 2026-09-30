@@ -106,7 +106,7 @@ def create_booking():
         return jsonify({
             "success": False,
             "message":
-                "Crown & Clipper is closed on Sundays. "
+                "Clip Your Crown is closed on Sundays. "
                 "Please choose another date."
         }), 400
 
